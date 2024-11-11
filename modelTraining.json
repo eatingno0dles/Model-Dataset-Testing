@@ -350,11 +350,12 @@
         }
     },
     {
-          "completion": "Learning Objective 4.1.A: Identify evidence of chemical and physical changes in matter. > (Essential Knowledge 4.1.A.1: A physical change occurs when a substance undergoes a change in properties but not a change in composition. Changes in the phase of a substance (solid, liquid, gas) or formation/separation of mixtures of substances are common physical changes. Essential Knowledge 4.1.A.2: A chemical change occurs when substances are transformed into new substances, typically with different compositions. Production of heat or light, formation of a gas, formation of a precipitate, and/or color change provide possible evidence that a chemical change has occurred.)",
-          "metadata": {
-              "learning_objective": "4.1.A",
-              "essential_knowledge": "4.1.A.1, 4.1.A.2"
-          }
+        "prompt": "What are the Learning Objectives and Essential Knowledge Statements for Topic 4.1, Introduction For Reactions?",
+        "completion": "Learning Objective 4.1.A: Identify evidence of chemical and physical changes in matter. > (Essential Knowledge 4.1.A.1: A physical change occurs when a substance undergoes a change in properties but not a change in composition. Changes in the phase of a substance (solid, liquid, gas) or formation/separation of mixtures of substances are common physical changes. Essential Knowledge 4.1.A.2: A chemical change occurs when substances are transformed into new substances, typically with different compositions. Production of heat or light, formation of a gas, formation of a precipitate, and/or color change provide possible evidence that a chemical change has occurred.)",
+        "metadata": {
+            "learning_objective": "4.1.A",
+            "essential_knowledge": "4.1.A.1, 4.1.A.2"
+        }
     },
     {
         "prompt": "What are the Learning Objectives and Essential Knowledge Statements for Topic 4.2, Net Ionic Equations?",
@@ -962,7 +963,8 @@
     },
     {
         "prompt": "Generate a multiple choice question for essential knowledge 1.5.A.3",
-        "completion": "[no question available yet]",
+        "completion": "1s2 2s2 2p6 3s2 3p6 \nWhich of the following species has the electron configuration shown above?\n(A) O\n(B) Ne\n(C) K+\n(D) Cl+",
+        "correct answer": "C",
         "metadata": {
             "learning_objective": "1.5.A",
             "essential_knowledge": "1.5.A.3",
