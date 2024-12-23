@@ -952,7 +952,7 @@ json_data = [
             ]
         }
    ]
-recommended_practices = ["5.B", "5.D", "2.A", "5.A", "1.A", "4.B", "4.A", "4.C", "6.A", "3.A", "4.C", "4.C", "3.B", "6.C", "6.C", "4.D", "4.C", "3.C", "5.C", "4.A", "6.E", "5.F", "3.C", "2.C", "4.D", "4.A", "5.F", "2.E", "2.B", "5.E", "3.B", "6.B", "5.C", "3.A", "1.B", "1.B", "5.E", "6.E", "5.C", "5.B", "5.E", "6.E", "1.A", "1.B", "5.B", "5.B", "1.A", "6.E", "6.D", "5.D", "6.E", "2.D", "1.B", "5.F", "5.F", "5.F", "5.A", "6.D", "4.D", "5.D", "5.C", "6.D", "5.A", "5.D", "4.C", "6.F", "5.F", "5.B", "2.F", "5.B", "5.B", "5.C", "5.C", "5.D", "6.C", "2.D", "6.D", "5.F", "6.G", "2.D", "6.C", "5.F", "6.E", "6.E", "6.D", "4.D", "4.D", "2.F", "5.F", "6.D", "5.B"]
+recommended_practices = ["5.B", "5.D", "2.A", "5.A", "1.A", "4.B", "4.A", "4.C", "6.A", "5.D", "4.C", "4.C", "1.A", "6.C", "6.C", "4.D", "4.C", "4.C", "5.C", "4.A", "6.E", "5.F", "4.C", "2.C", "4.D", "4.A", "5.F", "2.E", "2.B", "5.E", "1.A", "6.B", "5.C", "5.D", "1.B", "1.B", "5.E", "6.E", "5.C", "5.B", "5.E", "6.E", "1.A", "1.B", "5.B", "5.B", "1.A", "6.E", "6.D", "5.D", "6.E", "2.D", "1.B", "5.F", "5.F", "5.F", "5.A", "6.D", "4.D", "5.D", "5.C", "6.D", "5.A", "5.D", "4.C", "6.F", "5.F", "5.B", "2.F", "5.B", "5.B", "5.C", "5.C", "5.D", "6.C", "2.D", "6.D", "5.F", "6.G", "2.D", "6.C", "5.F", "6.E", "6.E", "6.D", "4.D", "4.D", "2.F", "5.F", "6.D", "5.B"]
 def parse_json_to_data(json_data):
     data = []
     for entry in json_data:
@@ -1003,91 +1003,3 @@ def parse_json_to_data(json_data):
                 i.recommended_practice = science_practices[j]
     return data
 data = parse_json_to_data(json_data)
-
-class prompt:
-    def __init__(self, prompt, topic, learning_objective, essential_knowledge, recommended_practice):
-        self.prompt = prompt
-        self.topic = topic
-        self.learning_objective = learning_objective
-        self.essential_knowledge = essential_knowledge
-        self.recommended_practice = recommended_practice
-
-class question:
-    def __init__(self, question, topic, learning_objective, essential_knowledge, recommended_practice):
-        self.question = question
-        self.topic = topic
-        self.learning_objective = learning_objective
-        self.essential_knowledge = essential_knowledge
-        self.recommended_practice = recommended_practice
-
-def generate_questions_unit_num(unit, number_of_questions):
-    essential_knowledge_list = []
-    questions = []
-    for i in data:
-        if i.topic.startswith(unit):
-            essential_knowledge_list.append(i)
-    if len(essential_knowledge_list) == 0:
-        return "Please enter a valid unit"
-    print(len(essential_knowledge_list))
-    if number_of_questions < len(essential_knowledge_list):
-        return "Please enter a larger number"
-    if number_of_questions == len(essential_knowledge_list):
-        for ek in essential_knowledge_list:
-            questions.append(f"Create a multiple choice question for subunit {ek.topic}, {(ek.essential_knowledge)[0:27]}, and {ek.recommended_practice[0:20]}. The learning objective is {ek.learning_objective} The essential knowledge is {ek.essential_knowledge} The science practice is {ek.recommended_practice} When crafting the multiple choice question consider the learning objective, essential knowledge, and science practice. The question should have 4 options and an answer. Provide an explanation for the answer. Your explanation should not involve the essential knowledge, learning objective, or science practice, it should be more of an explanation of why the correct answer is correct. If the question needs some kind of diagram, you may add 'context'. Context is not always needed. It would be like a diagram, graph, or particle diagram that was needed for the problem. Things like explanations of situations do not belong in context, those can go in the question itself unless they are excessively long. Context should usually just be descriptions of diagrams, tables, or graphs. If the diagrams are makable with text, then the context can just be the diagrams. If there is some kind of image, graph, or table that is in context, use the shorthand ElementDesc[], filling in the square brackets with the description, to denote the element. Do not confuse context with the question itself, like I said, sometimes context isn't even needed. Also, context should not include some kind of prerequisite knowledge about chemistry.")
-    if number_of_questions > len(essential_knowledge_list):
-        multiple = number_of_questions / len(essential_knowledge_list)
-        print(multiple)
-        if multiple.is_integer():
-            for ek in essential_knowledge_list:
-                questions.append(f"Create {int(multiple)} multiple choice questions for subunit {ek.topic}, {(ek.essential_knowledge)[0:27]}, and {ek.recommended_practice[0:20]}. The learning objective is {ek.learning_objective} The essential knowledge is {ek.essential_knowledge} The science practice is {ek.recommended_practice} When crafting the {int(multiple)} multiple choice questions consider the learning objective, essential knowledge, and science practice. Each question should have 4 options and an answer. For each of them, provide an explanation for the answer. Your explanation should not involve the essential knowledge, learning objective, or science practice, it should be more of an explanation of why the correct answer is correct. If the question needs some kind of diagram, you may add 'context'. Context is not always needed. It would be like a diagram, graph, or particle diagram that was needed for the problem. Things like explanations of situations do not belong in context, those can go in the question itself unless they are excessively long. Context should usually just be descriptions of diagrams, tables, or graphs. If the diagrams are makable with text, then the context can just be the diagrams. Also, context should not include some kind of prerequisite knowledge about chemistry. If there is some kind of image, graph, or table that is in context, use the shorthand ElementDesc[], filling in the square brackets with the description, to denote the element. Do not confuse context with the question itself, like I said, sometimes context isn't even needed. Create all {int(multiple)} questions, don't stop in the middle. All of the questions need to be generated.")
-        else:
-            multiple = int(multiple) + 1
-            print(multiple)
-            for ek in essential_knowledge_list:
-                questions.append(f"Create {multiple} multiple choice questions for subunit {ek.topic}, {(ek.essential_knowledge)[0:27]}, and {ek.recommended_practice[0:20]}. The learning objective is {ek.learning_objective} The essential knowledge is {ek.essential_knowledge} The science practice is {ek.recommended_practice} When crafting the {multiple} multiple choice questions consider the learning objective, essential knowledge, and science practice. Each question should have 4 options and an answer. For each of them, provide an explanation for the answer. Your explanation should not involve the essential knowledge, learning objective, or science practice, it should be more of an explanation of why the correct answer is correct. If the question needs some kind of diagram, you may add 'context'. Context is not always needed. It would be like a diagram, graph, or particle diagram that was needed for the problem. Things like explanations of situations do not belong in context, those can go in the question itself unless they are excessively long. Context should usually just be descriptions of diagrams, tables, or graphs. If the diagrams are makable with text, then the context can just be the diagrams. Also, context should not include some kind of prerequisite knowledge about chemistry. If there is some kind of image, graph, or table that is in context, use the shorthand ElementDesc[], filling in the square brackets with the description, to denote the element. Do not confuse context with the question itself, like I said, sometimes context isn't even needed. Create all {multiple} questions, don't stop in the middle. All of the questions need to be generated.")
-    print(len(questions)*multiple)
-    return questions
-
-def generate_questions(multiple):
-    questions = []
-    for i in data:
-        questions.append(f"Create {multiple} multiple choice questions for subunit {i.topic}, {(i.essential_knowledge)[0:27]}, and {i.recommended_practice[0:20]}. The learning objective is {i.learning_objective} The essential knowledge is {i.essential_knowledge} The science practice is {i.recommended_practice} When crafting the {multiple} multiple choice questions consider the learning objective, essential knowledge, and science practice. Each question should have 4 options and an answer. For each of them, provide an explanation for the answer. Your explanation should not involve the essential knowledge, learning objective, or science practice, it should be more of an explanation of why the correct answer is correct. If the question needs some kind of diagram, you may add 'context'. Context is not always needed. It would be like a diagram, graph, or particle diagram that was needed for the problem. Things like explanations of situations do not belong in context, those can go in the question itself unless they are excessively long. Context should usually just be descriptions of diagrams, tables, or graphs. If the diagrams are makable with text, then the context can just be the diagrams. Also, context should not include some kind of prerequisite knowledge about chemistry. If there is some kind of image, graph, or table that is in context, use the shorthand ElementDesc[], filling in the square brackets with the description, to denote the element. Do not confuse context with the question itself, like I said, sometimes context isn't even needed. Create all {multiple} questions, don't stop in the middle. All of the questions need to be generated.")
-    print(f"Generated {len(questions)*multiple} questions")
-    return questions
-
-prompts = generate_questions(5)
-
-from openai import OpenAI
-client = OpenAI()
-questions = []
-'''
-for prompt in prompts:
-    response = client.chat.completions.create(
-    model="chatgpt-4o-latest",
-    messages=[
-        {
-        "role": "system",
-        "content": [
-            {
-            "type": "text",
-            "text": "You are an assistant that creates multiple-choice questions for AP Chemistry. In AP Chemistry there are 9 units, and each has some subunits. Each subunit has 1 or 2 learning objectives and each learning objective has 1-6 essential knowledge statements. A learning objective is denoted like 1.1.A, 1.1. A is the only learning objective for subunit 1.1. An essential knowledge statement is denoted as 1.1.A.1 or 1.1.A.2, both of which are essential knowledges for learning objective 1.1.A. There is also something called Science practices, and there are 5 sections each with a few subsections for MCQs, 1, 2, 4, 5 and 6. A science practice is denoted as 1.A or 1.B, or 5.E or 5.F. Each MCQ should have an essential knowledge statement and science practice tied to it. All of this info and the questions above are from the AP Chemistry Course and Exam Description (CED), at the link https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf. An example of the format you should answer in is: \"Context: 1s2 2s2 2p6 3s2 3p6, Question: Which of the following species has the electron configuration shown above? Options:(A) O, (B) Ne, (C) K+, (D) Cl+, Answer: (C), Essential Knowledge: 1.5.A.3, Question SP: 1.A\". Context would be something that would be shown above the question like a graph, table or just a string of text like shown above, or any combination of these. Another example of a question (this one with multiple objects of context) is: \"Context: HCl(aq) + CaCO3(s) → CaCl2(aq) + CO2(g) + H2O(l), The reaction between HCl(aq) and CaCO3(s) is represented by the equation above. Two separate trials were carried out using CaCO3(s) samples of the same mass, but one sample was a single piece of CaCO3(s), and one sample was composed of small pieces of CaCO3(s). The loss of mass of CaCO3(s) as a function of time for both trials is shown in the graph below. ElementDesc[Type: Graph, Specifications: Graph with the y-axis labeled 'Loss of Mass of CaCO₃(s) (g)' and the x-axis labeled 'Time (s)'. It shows two curves, labeled X and Y. Curve Y rises steeply at first, then levels off. Curve X rises more gradually and also levels off, but at a lower point than Curve Y.], Question: Which of the curves, X or Y, represents the reaction with small pieces of CaCO3(s), and why?, Options: (A), (B) Curve X, because it takes a shorter time for the reaction to go to completion due to the larger surface area of CaCO3(s), (C) Curve Y, because it shows that the reaction proceeded at a nonuniform rate, (D) Curve Y, because it takes a shorter time for the reaction to go to completion due to the larger surface area of CaCO3(s), Answer:(D), Essential Knowledge: 5.1.A.3, Question SP: 6.F\". You don't need to provide context if the question does not require it. You will be given a learning objective, essential knowledge statement, and science practice and you will be asked to generate questions."
-            }
-        ]
-        },
-        {
-            "role": "user",
-            "content": prompt
-        }
-    ],
-    temperature=1.02,
-    max_tokens=16383,
-    top_p=1,
-    frequency_penalty=0,
-    presence_penalty=0
-    )
-    questions.append(response.choices[0].message.content)
-    count += 1
-    if count > 3:
-        break
-print(questions[0])
-'''

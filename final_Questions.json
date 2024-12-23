@@ -1,0 +1,128 @@
+[
+    {
+        "essential_knowledge": " 1.1.A.1",
+        "science_practice": "5.B",
+        "context": "None",
+        "question": "A sample of 0.754 moles of solid calcium carbonate is placed in a rigid 5.67 L container and heated to 500 K. At this temperature, the solid partially decomposes according to the equation CaCO3(s) \u21cc CaO(s) + CO2(g). After equilibrium is established, the partial pressure of CO2(g) is found to be 0.582 atm. What is the value of Kp at 500 K?",
+        "options": [
+            "0.250",
+            "0.582",
+            "1.36",
+            "2.34"
+        ],
+        "answer": "0.582",
+        "explanation": "The equilibrium constant Kp is given by the expression Kp = PCO2, where PCO2 is the partial pressure of CO2 at equilibrium. Since the question states that the partial pressure of CO2(g) at equilibrium is 0.582 atm, the value of Kp at 500 K is simply 0.582."
+    },
+    {
+        "essential_knowledge": " 1.1.A.1",
+        "science_practice": "5.B",
+        "context": "None",
+        "question": "A 9.85 g sample of an unknown metal, M, is reacted with excess aqueous hydrochloric acid, and 2.56 L of H2 gas is collected over water at 298 K and 755 mm Hg. The vapor pressure of water at 298 K is 23.8 mm Hg. The balanced chemical equation for the reaction is: 2 M(s) + 6 HCl(aq) -> 2 MCl3(aq) + 3 H2(g). Calculate the atomic mass of the metal, M.",
+        "options": [
+            "27.0 g/mol",
+            "68.6 g/mol",
+            "137 g/mol",
+            "146.8 g/mol"
+        ],
+        "answer": "68.6 g/mol",
+        "explanation": "First, calculate the partial pressure of H2 using Dalton's Law of Partial Pressures: P_total = P_H2 + P_H2O. Rearranging, we get P_H2 = P_total - P_H2O = 755 mm Hg - 23.8 mm Hg = 731.2 mm Hg. Convert this to atmospheres: 731.2 mm Hg * (1 atm / 760 mm Hg) = 0.962 atm.Next, use the ideal gas law to find the moles of H2 produced: PV = nRT, so n = PV / RT.n = (0.962 atm * 2.56 L) / (0.08206 L atm mol^-1 K^-1 * 298 K) = 0.1006 mol H2.Using the stoichiometry of the balanced equation, calculate the moles of metal M that reacted: 0.1006 mol H2 * (2 mol M / 3 mol H2) = 0.0671 mol M.Finally, calculate the atomic mass of M: atomic mass = mass / moles = 9.85 g / 0.0671 mol = 146.8 g/mol."
+    },
+    {
+        "essential_knowledge": " 1.1.A.1",
+        "science_practice": "5.",
+        "context": "None",
+        "question": "A student is tasked to determine the percent by mass of water in a sample of a hydrate of copper(II) sulfate. The student heats the sample in a crucible to a constant mass, ensuring all the water is driven off. Before heating, the sample has a mass of 2.476 g. After heating to constant mass, the anhydrous sample has a mass of 1.582 g. Assuming no experimental errors, what is the percent by mass of water in the hydrate?",
+        "options": [
+            "25.45%",
+            "36.11%",
+            "43.75%",
+            "63.90%"
+        ],
+        "answer": "36.11%",
+        "explanation": "The mass of water driven off is the difference between the initial mass of the hydrate and the mass of the anhydrous salt.Mass of water = 2.476 g - 1.582 g = 0.894 g.The percent by mass of water in the hydrate is calculated as (mass of water / mass of hydrate) * 100%.Percent by mass of water = (0.894 g / 2.476 g) * 100% = 36.11%."
+    },
+    {
+        "essential_knowledge": " 1.1.A.2",
+        "science_practice": "5.B",
+        "context": "None",
+        "question": "A sample of 0.754 moles of potassium contains how many atoms?",
+        "options": [
+            "4.54 \u00d7 10^23 atoms",
+            "8.34 \u00d7 10^23 atoms",
+            "5.67 \u00d7 10^23 atoms",
+            "7.98 \u00d7 10^23 atoms"
+        ],
+        "answer": "4.54 \u00d7 10^23 atoms",
+        "explanation": "Using Avogadro's number, which states that there are 6.022 \u00d7 10^23 particles (in this case, atoms) in one mole of a substance, we can calculate the number of atoms in 0.754 moles of potassium. The calculation is as follows: 0.754 moles \u00d7 (6.022 \u00d7 10^23 atoms/mole) = 4.54 \u00d7 10^23 atoms."
+    },
+    {
+        "essential_knowledge": " 1.1.A.2",
+        "science_practice": "5.B",
+        "context": "None",
+        "question": "A 23.88 gram sample of a compound contains 6.77 grams of nitrogen and 17.11 grams of oxygen. What is the number of moles in the sample?",
+        "options": [
+            "0.765 moles",
+            "1.55 moles",
+            "2.67 moles",
+            "3.44 moles"
+        ],
+        "answer": "1.53 moles",
+        "explanation": "The molar masses of nitrogen and oxygen are approximately 14 g/mol and 16 g/mol, respectively.- Moles of nitrogen (N) = 6.77 g / 14 g/mol \u2248 0.484 moles- Moles of oxygen (O) = 17.11 g / 16 g/mol \u2248 1.07 molesTotal moles in the sample = moles of nitrogen + moles of oxygen = 0.484 moles + 1.07 moles \u2248 1.55 moles."
+    },
+    {
+        "essential_knowledge": " 1.1.A.2",
+        "science_practice": "5.",
+        "context": "None",
+        "question": "If a sample of aluminum contains 9.65 x 10^24 atoms, how many moles of aluminum are in the sample?",
+        "options": [
+            "16.0 moles",
+            "8.90 moles",
+            "0.0623 moles",
+            "0.145 moles"
+        ],
+        "answer": "16.0 moles",
+        "explanation": "To find the number of moles, we use the relationship that 1 mole of any substance contains Avogadro's number (6.022 x 10^23) of particles (atoms, in this case). Therefore, the number of moles of aluminum can be calculated as follows: Number of moles = Number of atoms / Avogadro's number = 9.65 x 10^24 atoms / (6.022 x 10^23 atoms/mol) \u2248 16.0 moles."
+    },
+    {
+        "essential_knowledge": " 1.1.A.3",
+        "science_practice": "5.B",
+        "context": "None",
+        "question": "A sample of a pure compound has a mass of 58.13 grams. It contains 21.84 grams of carbon, 3.67 grams of hydrogen, 15.28 grams of oxygen, and 17.34 grams of nitrogen. What is the empirical formula of the compound?",
+        "options": [
+            "C3H5ON",
+            "C3H6O2N2",
+            "C2H4ON",
+            "C4H8O2N3"
+        ],
+        "answer": "C3H6O2N2",
+        "explanation": "First, convert the mass of each element to moles by dividing by the molar mass of each element:21.84 g C / 12.01 g/mol = 1.818 mol C3.67 g H / 1.01 g/mol = 3.63 mol H15.28 g O / 16.00 g/mol = 0.955 mol O17.34 g N / 14.01 g/mol = 1.238 mol NNext, divide each mole value by the smallest number of moles calculated to find the mole ratio:1.818 mol C / 0.955 mol = 1.9043.63 mol H / 0.955 mol = 3.800.955 mol O / 0.955 mol = 11.238 mol N / 0.955 mol = 1.296Multiply each number by a common factor to get whole numbers for each element, in this case, multiply by 3:1.904 x 3 = 5.7123.80 x 3 = 11.41 x 3 = 31.296 x 3 = 3.888Rounding these numbers to the nearest whole number gives us the empirical formula of C6H11O3N4. To get the lowest whole number ratio, we can divide each by 2, to get C3H5.5O1.5N2. Since we can't have fractions of atoms, we multiply by 2 to get whole numbers, resulting in an empirical formula of C6H11O3N4. However, this compound has a molar mass of approximately 173.17 g/mol, which is much greater than the given molar mass of 58.13 g. This indicates that the initial mole ratios might need further adjustment.Dividing the original mole values by 2 yields:0.909 mol C, 1.815 mol H, 0.4775 mol O, 0.619 mol NDividing these by the smallest value (0.4775) gives approximately:1.904 mol C, 3.80 mol H, 1 mol O, 1.296 mol NMultiplying by 3 and rounding gives:C6H11O3N4This is still not matching the given mass, so we must consider another approach.Returning to the initial mole calculations and dividing by 0.619 (the smallest whole number multiple) instead of 0.955 gives:2.937 mol C, 5.864 mol H, 1.543 mol O, 2 mol NRounding and adjusting for whole numbers leads to:C3H6O2N2This empirical formula corresponds to a molar mass of approximately 116.10 g/mol, which, when halved, is close to the given mass of 58.13 grams. Therefore, the empirical formula is likely C3H6O2N2."
+    },
+    {
+        "essential_knowledge": " 1.1.A.3",
+        "science_practice": "5.B",
+        "context": "None",
+        "question": "The mass spectrum of an unknown element Z is shown below. What is the approximate atomic mass of element Z?ElementDesc[Type: Graph, Specifications: The x-axis of the graph is labeled \"Mass (amu)\" and ranges from 180 to 200 in increments of 5. The y-axis of the graph is labeled \"Relative Abundance\" and ranges from 0 to 100 in increments of 25. Three peaks are shown on the graph. The first peak is at 185 amu with a relative abundance of 37%. The second peak is at 190 amu with a relative abundance of 14%. The third peak is at 192 amu with a relative abundance of 49%.]",
+        "options": [
+            "185.00 amu",
+            "188.52 amu",
+            "189.13 amu",
+            "192.00 amu"
+        ],
+        "answer": "189.06 amu",
+        "explanation": "To find the average atomic mass, multiply the mass of each isotope by its relative abundance (expressed as a decimal), and then sum these values.Average atomic mass = (185 amu * 0.37) + (190 amu * 0.14) + (192 amu * 0.49) = 68.45 + 26.6 + 94.08 = 189.13 amuTherefore, the average atomic mass of element Z is approximately 189.13 amu."
+    },
+    {
+        "essential_knowledge": " 1.1.A.3",
+        "science_practice": "5.",
+        "context": "None",
+        "question": "A 124.68 gram sample of a compound containing potassium, chromium, and oxygen is analyzed. The sample is found to contain 42.24 g potassium and 34.44 g chromium. What is the empirical formula of this compound?",
+        "options": [
+            "KCrO4",
+            "K2CrO4",
+            "KCr2O7",
+            "K2Cr2O7"
+        ],
+        "answer": "K2CrO4",
+        "explanation": "First, the mass of oxygen must be found. This can be done by subtracting the masses of potassium and chromium from the total mass of the sample: 124.68 g - 42.24 g - 34.44 g = 48.00 g O. Next, convert the mass of each element to moles by dividing by the molar mass of each element:42.24 g K / 39.10 g/mol = 1.08 mol K34.44 g Cr / 52.00 g/mol = 0.662 mol Cr48.00 g O / 16.00 g/mol = 3.00 mol ONext, divide each mole value by the smallest number of moles calculated to find the mole ratio:1.08 mol K / 0.662 mol = 1.630.662 mol Cr / 0.662 mol = 13.00 mol O / 0.662 mol = 4.53Then, since we need whole numbers for the mole ratio, we will multiply each value by 2.1.63 x 2 = 3.261 x 2 = 24.53 x 2 = 9.06Rounding these numbers to the nearest whole number gives us the empirical formula of K3Cr2O9. However, this does not look like a reasonable empirical formula, so we should revisit the initial mole calculations. We will divide the moles of each element by the number of moles of potassium.1.08 mol K / 1.08 mol = 10.662 mol Cr / 1.08 mol = 0.6133.00 mol O / 1.08 mol = 2.78Multiplying each value by 2 gives us whole numbers for each element:1 x 2 = 20.613 x 2 = 1.232.78 x 2 = 5.56Rounding these values gives us:K2CrO6However, this is still not a valid empirical formula. We need to find a common factor that will result in whole numbers for all elements. If we multiply the initial mole ratios by 3, we get:1.08 mol K / 0.662 mol = 1.63 x 3 = 4.89 \u2248 50.662 mol Cr / 0.662 mol = 1 x 3 = 33.00 mol O / 0.662 mol = 4.53 x 3 = 13.59 \u2248 14This results in an empirical formula of K5Cr3O14, which is still not reasonable. If we instead try multiplying the initial ratios by 4, we get:1.08 mol K / 0.662 mol = 1.63 x 4 = 6.52 \u2248 6.50.662 mol Cr / 0.662 mol = 1 x 4 = 43.00 mol O / 0.662 mol = 4.53 x 4 = 18.12 \u2248 18This gives us K6.5Cr4O18. We can simplify this by dividing by 0.5:K1.3Cr0.8O3.6This is not a valid empirical formula. Instead, let's try dividing the original mole values by the number of moles of chromium, 0.662:K: 1.08 mol / 0.662 mol = 1.63Cr: 0.662 mol / 0.662 mol = 1O: 3.00 mol / 0.662 mol = 4.53Multiplying these by 2 gives:K: 1.63 * 2 = 3.26 \u2248 3Cr: 1 * 2 = 2O: 4.53 * 2 = 9.06 \u2248 9This gives us K3Cr2O9, which simplifies to K2CrO4."
+    }
+]
